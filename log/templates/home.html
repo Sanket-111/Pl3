@@ -1,0 +1,126 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock title %}
+{% block body %}
+
+
+{% if user.is_authenticated%}
+   
+<div class="container my-3" style="justify-content:center ;align-items:center">
+   <a href="{%url 'logout'%}"><button class="btn btn-success">Logout</button></a>
+   <a href="{%url 'password_change'%}"><button class="btn btn-success">Change Password</button></a>
+    <hr>
+  </div>
+
+
+    <div style="display: flex; justify-content:center ; align-items: center;">
+      <h1>Greatest People on Earth</h1>
+   </div>
+
+    <div class="container my-3" style="display: flex; justify-content:center;flex-wrap: wrap; ">
+
+    <div class="card mx-3 my-3" style="width: 18rem;">
+      <img class="card-img-top" src="https://cdn.wealthygorilla.com/wp-content/uploads/2019/02/Most-Influential-People-Mahatma-Gandhi-800x450.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Mahatma Gandhi</h5>
+        <p class="card-text">Assuming leadership of the Indian National Congress in 1921, Gandhi led nationwide campaigns for easing poverty, expanding women's rights, building religious and ethnic amity, ending untouchability, and, above all, achieving swaraj or self-rule.</p>
+        <a href="https://en.wikipedia.org/wiki/Mahatma_Gandhi" class="btn btn-primary">Read More</a>
+      </div>
+    </div>
+
+    <div class="card mx-3 my-3" style="width: 18rem;">
+      <img class="card-img-top" src="https://cdn.wealthygorilla.com/wp-content/uploads/2019/02/Most-Influential-People-Albert-Einstein-800x450.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Albert Enstein</h5>
+        <p class="card-text">In 1905, a year sometimes described as his annus mirabilis ('miracle year'), Einstein published four groundbreaking papers.[14] These outlined the theory of the photoelectric effect.</p>
+        <a href="https://en.wikipedia.org/wiki/Albert_Einstein" class="btn btn-primary">Read More</a>
+      </div>
+    </div>
+
+    <div class="card mx-3 my-3" style="width: 18rem;">
+      <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ5gDYc1UtAqXw5IZgGRwjDN2-2Gs-BOn95rrizpClT29t7I78GdE1B5uxEIXOT5YBbgA&usqp=CAU" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Barac Obama</h5>
+        <p class="card-text">Obama was born in Honolulu, Hawaii. After graduating from Columbia University in 1983, he worked as a community organizer in Chicago.</p>
+        <a href="https://en.wikipedia.org/wiki/Barack_Obama" class="btn btn-primary">Read More</a>
+      </div>
+    </div>
+
+   </div>
+
+
+   <div class="container my-3" style="display: flex; justify-content:center ;flex-wrap: wrap; ">
+
+      <div class="card mx-3 my-3" style="width: 18rem;">
+        <img class="card-img-top" src="https://cdn.thetealmango.com/wp-content/uploads/2021/07/ronaldo-1.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Christiano Ronaldo</h5>
+          <p class="card-text">Cristiano Ronaldo dos Santos Aveiro GOIH ComM (Portuguese pronunciation: [kɾiʃˈtjɐnu ʁɔˈnaɫdu]; born 5 February 1985) is a Portuguese professional footballer who plays as a forward and captains the Portugal national team.</p>
+          <a href="https://en.wikipedia.org/wiki/Cristiano_Ronaldo" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+  
+      <div class="card mx-3 my-3" style="width: 18rem;">
+        <img class="card-img-top" src="https://i0.wp.com/www.opindia.com/wp-content/uploads/2022/10/PM-Modi-Image-007-13102022.jpg?fit=1189%2C689&ssl=1" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Narendra Modi</h5>
+          <p class="card-text">Narendra Damodardas Modi (Gujarati: [ˈnəɾendɾə dɑmodəɾˈdɑs ˈmodiː] (listen); born 17 September 1950)[b] is an Indian politician serving as the 14th and current prime minister of India since 2014.</p>
+          <a href="https://en.wikipedia.org/wiki/Narendra_Modi" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+  
+      <div class="card mx-3 my-3" style="width: 18rem;">
+        <img class="card-img-top" src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202002/Shivaji3.jpeg?size=690:388" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Chatrapati Shivaji Maharaj</h5>
+          <p class="card-text">Over the course of his life, Shivaji engaged in both alliances and hostilities with the Mughal Empire, the Sultanate of Golkonda, Sultanate of Bijapur and the European colonial powers.</p>
+          <a href="https://en.wikipedia.org/wiki/Shivaji" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+  
+     </div>
+
+
+     <div class="container my-3" style="display: flex; justify-content:center ;flex-wrap: wrap; ">
+
+      <div class="card mx-3 my-3" style="width: 18rem;">
+        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZVapPnJ0Wwz08bF_aXwyA64w7gskSO4O7jJXTGevp&s" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Dr. Bhimrao Ambedkar</h5>
+          <p class="card-text">Bhimrao Ramji Ambedkar (14 April 1891 – 6 December 1956) was an Indian jurist, economist, social reformer and political leader who headed the committee drafting the Constitution of India ....</p>
+          <a href="https://en.wikipedia.org/wiki/B._R._Ambedkar" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+  
+      <div class="card mx-3 my-3" style="width: 18rem;">
+        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFhjVl2hGWDU7JD_wvytqKsfhU1XG8esigB6gZ9CBc&s" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Virat Kohli</h5>
+          <p class="card-text">Kohli made his Test debut in 2011.[4] He reached the number one spot in the ICC rankings for ODI batsmen for the first time in 2013.</p>
+          <a href="https://en.wikipedia.org/wiki/Virat_Kohli" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+  
+      <div class="card mx-3 my-3" style="width: 18rem;">
+        <img class="card-img-top" src="https://wd-image.webdunia.com/image-conversion/process-aws.php?url=https://nonprod-media.webdunia.com/public_html/_media/hi/img/article/2019-11/16/full/1573912009-177.jpg&w=&h=&outtype=webp" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Lata Mangeshkar</h5>
+          <p class="card-text"> Her contribution to the Indian music industry in a career spanning eight decades gained her honorific titles such as the "Queen of Melody", "Nightingale of India", and "Voice of the Millennium".</p>
+          <a href="https://en.wikipedia.org/wiki/Lata_Mangeshkar" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+  
+     </div>
+
+    {%else %}
+ <div class="container my-3" style="justify-content:center ;align-items:center"></div>
+    <a href="login/"><button class="btn btn-success">Register</button></a>
+    <a href="login/"><button class="btn btn-success">Login</button></a>
+    <hr>
+  </div>
+  
+  <div class="container" style="background-image: url();background-repeat: no-repeat;;height:25em;border:1px solid black;">
+  <img src="https://www.shutterstock.com/image-vector/red-vector-banner-register-now-260nw-1470612773.jpg" alt="" style="height:24em;width: 70em;"></div>
+   {%endif %}
+
+
+{% endblock body %}
